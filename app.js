@@ -3,7 +3,6 @@
 
 async function getGiphy(search) {     
     const res = await axios.get(`http://api.giphy.com/v1/gifs/search?q=${search}&api_key=N0gGSre32HbnqqqSAOnVRXuMM2mCfGRz&limit=1`);
-    console.log(res);
     addGiphy(res.data.data);
     return res;
 }
